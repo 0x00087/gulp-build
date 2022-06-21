@@ -2,9 +2,13 @@ html
    head
       title Главная
       link(rel='stylesheet' href='styles/style.min.css')
+      link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
    body
-      .wrapper
-         include html/header
-         main.content
-         include html/footer
+      include html/header
+      main.wrapper
+         include html/carousel
+      include html/footer
+      script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
       script(src='code/app.min.js')

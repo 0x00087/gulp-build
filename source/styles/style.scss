@@ -1,3 +1,15 @@
 @import 'initialize/normalize';
 @import 'initialize/fonts';
 @import 'initialize/variables';
+
+@import 'header';
+
+.wrapper {
+  padding: 60px 10px;
+
+  @media (min-width: 496px) {
+    padding: 60px 80px;
+  }
+}
+
+@import 'components/carousel';
