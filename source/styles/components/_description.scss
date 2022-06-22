@@ -1,0 +1,64 @@
+.description {
+  width: 100%;
+  margin: 0 0 50px 0;
+  @media (min-width: 992px) {
+    margin: 0;
+  }
+
+  &__title {
+    width: 100%;
+
+    font-family: 'Raleway';
+    font-size: calc((100vw - 375px) / (1920 - 375) * (36 - 24) + 24px);
+    font-weight: 400;
+    line-height: 30px;
+
+    padding: 35px 0;
+
+    text-align: center;
+
+    position: relative;
+
+    margin: 0 0 50px 0;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      content: '';
+
+      width: 265px;
+      height: 1px;
+      background: $blue-color;
+    }
+
+    & > b {
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__text {
+    font-family: 'Raleway';
+    font-size: calc((100vw - 375px) / (1920 - 375) * (24 - 16) + 16px);
+    text-align: justify;
+    color: rgba($color: $black-color, $alpha: 0.6);
+    line-height: 29px;
+
+    & > b {
+      font-weight: 700;
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+
+    @media (min-width: 925px) {
+      max-width: 700px;
+    }
+  }
+}

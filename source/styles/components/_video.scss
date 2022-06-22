@@ -1,0 +1,37 @@
+.video {
+  width: 100%;
+  height: 250px;
+
+  padding: 10px;
+  border-radius: 18px;
+  background: $purple-color;
+
+  margin: 0 auto 40px;
+
+  @media (min-width: 625px) {
+    padding: 25px;
+    height: 300px;
+  }
+
+  @media (min-width: 925px) {
+    padding: 50px;
+    height: 570px;
+
+    max-width: 1280px;
+
+    margin: 0 auto 40px;
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 18px;
+
+    & > iframe {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+    }
+  }
+}

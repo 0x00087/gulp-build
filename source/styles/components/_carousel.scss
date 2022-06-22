@@ -1,9 +1,10 @@
 .carousel {
   width: 100%;
+  margin: 0 0 50px 0;
 
   &__title {
     font-family: 'Raleway';
-    font-size: 36px;
+    font-size: calc((100vw - 375px) / (1920 - 375) * (36 - 24) + 24px);
     font-weight: 700;
 
     padding: 0 0 20px 0;
@@ -36,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding: 10px 0;
+    padding: 10px 0 18px 0;
     gap: 20px;
 
     cursor: pointer;
@@ -44,6 +45,7 @@
 
   &__image {
     max-width: 200px;
+    max-height: 180px;
   }
 
   &__text {
@@ -101,4 +103,26 @@
   @media (min-width: 1280px) {
     width: 1120px;
   }
+}
+
+.swiper-button-prev {
+  left: 15px !important;
+}
+
+.swiper-button-next {
+  right: 15px !important;
+}
+
+.swiper-button-prev::after {
+  content: '<' !important;
+  color: $blue-color;
+  font-family: 'Raleway' !important;
+  font-size: 36px;
+}
+
+.swiper-button-next::after {
+  content: '>' !important;
+  color: $blue-color;
+  font-family: 'Raleway' !important;
+  font-size: 36px;
 }

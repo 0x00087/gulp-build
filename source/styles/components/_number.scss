@@ -1,0 +1,33 @@
+.number {
+  max-width: 1280px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  flex-wrap: wrap;
+
+  text-align: center;
+
+  margin: 0 auto 150px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__value {
+    font-family: 'Raleway';
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
